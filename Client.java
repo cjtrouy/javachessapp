@@ -68,7 +68,6 @@ class Client {
     }
 
     // Returns the IP of the client machine
-    // Test comment for git
     private void getClientIp() {
         try {
             URL url = new URL("https://api.ipify.org");
