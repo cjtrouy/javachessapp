@@ -12,4 +12,7 @@ Step 3:
   git clone https://github.com/cjtrouy/javachessapp
 
 Step 4:
-  Use 
+  In the terminal, run the command
+  cd javachessapp
+
+The could should now exist on your local machine. 
