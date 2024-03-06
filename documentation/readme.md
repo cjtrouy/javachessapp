@@ -5,7 +5,7 @@ the application.
 The server code is currently *a tad* wonky and will not always work properly. Work is currently being done to the server to make it more reliable.
 If the server is not running correctly, feel free to SSH into it and restart it. *Add SSH URL* *Migrate server from Windows based to Linux. Should NOT need to change source code as it is JAVA*
 
-To import this code on your own machine, please see Importing Steps.
+To import this code on your own machine, please see [Importing Steps](https://github.com/cjtrouy/javachessapp/blob/master/documentation/ImportingCode.txt).
 
 *Add this to its own document*
 If running on a windows machine, please open inbound access for UDP packets over all ports. To do this, access 'Windows Defender Firewall > Advanced Settings > Inbound Rules' and click 'New Rule' on the right hand side.
