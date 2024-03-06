@@ -16,4 +16,4 @@ Step 4:
   cd javachessapp
   
 
-The could should now exist on your local machine. 
+The code should now exist on your local machine. 
