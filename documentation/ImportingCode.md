@@ -5,14 +5,15 @@ Step 1:
 
 Step 2:
   Open a new terminal by navigating to the top navigation bar and selecting: 'Terminal > New Terminal'
-  or by pressing the key combination Ctrl + Shift + `
+  or by pressing the key combination *Ctrl + Shift + `*
 
 Step 3:
-  In the terminal, run the command
+  In the terminal, run the command:<br>
   git clone https://github.com/cjtrouy/javachessapp
 
 Step 4:
-  In the terminal, run the command
+  In the terminal, run the command:<br>
   cd javachessapp
+  
 
 The could should now exist on your local machine. 
