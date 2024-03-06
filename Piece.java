@@ -1,3 +1,5 @@
+import java.awt.MediaTracker;
+
 import javax.swing.*;
 
 class Piece extends JLabel {
@@ -58,13 +60,22 @@ class Piece extends JLabel {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
 	// Placeholder
 	public boolean isCheck() {
 		return false;
+	}
+
+	public void checkIcon(Icon pieceIcon) {
+		if (pieceIcon != null && pieceIcon instanceof ImageIcon) {
+			ImageIcon imageIcon = (ImageIcon) pieceIcon;
+			if (imageIcon.getImageLoadStatus() == MediaTracker.COMPLETE) {
+				return;
+			}
+		}
+		System.err.println("Error setting icon");
 	}
 
 	public void moved() {

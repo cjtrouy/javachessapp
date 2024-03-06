@@ -16,6 +16,7 @@ class King extends Piece {
 				break;
 		}
 		setIcon(new ImageIcon(color ? whiteKingIcon : "icons/black-king.png"));
+		checkIcon(this.getIcon());
 	}
 
 	// Function to determine if a move is valid

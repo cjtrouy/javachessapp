@@ -6,6 +6,8 @@ class Rook extends Piece {
 	public Rook(String initialPos, boolean color, ChessBoard board) {
 		super(initialPos, color, board);
 		setImageIcon();
+		// Refacture: I shouldn't have to pass 'this.getIcon()' to checkIcon().
+		checkIcon(this.getIcon());
 	}
 
 	private void setImageIcon() {

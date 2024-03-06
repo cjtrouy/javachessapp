@@ -4,6 +4,7 @@ class Bishop extends Piece {
 	public Bishop(String initialPos, boolean color, ChessBoard board) {
 		super(initialPos, color, board);
 		setIcon(new ImageIcon(color ? "icons/white-bishop.png" : "icons/black-bishop.png"));
+		checkIcon(this.getIcon());
 	}
 
 	public boolean isValidMove(JPanel startSquare, JPanel endSquare, boolean checkFlag) {

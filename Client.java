@@ -68,6 +68,10 @@ class Client {
     }
 
     // Returns the IP of the client machine
+    /*
+     * IP needed to discern if client is on the same network of the server.
+     * If on same network, use private IP instead of public.
+     */
     private void getClientIp() {
         try {
             URL url = new URL("https://api.ipify.org");

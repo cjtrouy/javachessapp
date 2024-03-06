@@ -4,6 +4,7 @@ class Queen extends Piece {
 	public Queen(String initialPos, boolean color, ChessBoard board) {
 		super(initialPos, color, board);
 		setIcon(new ImageIcon(color ? "icons/white-queen.png" : "icons/black-queen.png"));
+		checkIcon(this.getIcon());
 	}
 
 	public boolean isValidMove(JPanel startSquare, JPanel endSquare, boolean checkFlag) {

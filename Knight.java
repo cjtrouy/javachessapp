@@ -5,6 +5,7 @@ class Knight extends Piece {
 	public Knight(String initialPos, boolean color, ChessBoard board) {
 		super(initialPos, color, board);
 		setIcon(new ImageIcon(color ? "icons/white-knight.png" : "icons/black-knight.png"));
+		checkIcon(this.getIcon());
 	}
 
 	public boolean isValidMove(JPanel startSquare, JPanel endSquare, boolean checkFlag) {

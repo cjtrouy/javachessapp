@@ -4,6 +4,7 @@ class Pawn extends Piece {
 	public Pawn(String initialPos, boolean color, ChessBoard board) {
 		super(initialPos, color, board);
 		setImageIcon();
+		checkIcon(this.getIcon());
 	}
 
 	private void setImageIcon() {
