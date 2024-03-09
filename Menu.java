@@ -85,7 +85,7 @@ class Menu {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				board = new ChessBoard(colorSelection, iconSelection, 1, menu);
-				board.createChessBoard();
+				board.createChessBoard("Unknown");
 			}
 		});
 
@@ -792,13 +792,12 @@ class Menu {
 		promotionSquare.add(promotingPiece);
 		promotionSquare.revalidate();
 		promotionSquare.repaint();
-		
-		
+
 	}
 
-	public void startGame(int userColor) {
+	public void startGame(int userColor, String username) {
 		board = new ChessBoard(colorSelection, iconSelection, userColor, menu);
-		board.createChessBoard();
+		board.createChessBoard(username);
 	}
 
 	// Menu that displays after a user invites another user.

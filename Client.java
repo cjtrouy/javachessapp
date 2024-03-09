@@ -46,6 +46,8 @@ class Client {
 
     Client(Menu menu) {
         privateServIPString = "172.18.222.161";
+        // privateServIPString = "172.31.131.150"; // Used when connecting to WSL
+        // machine.
         privateServPortNum = 6500;
         publicServIpString = "24.237.168.152";
         publicServPortNum = 5500;
@@ -357,7 +359,7 @@ class Client {
                                 servSocket.send(sendPacket);
                                 sendingPacket = false;
 
-                                menuPointer.startGame(receiveBuffer[5]);
+                                menuPointer.startGame(receiveBuffer[5], clientUserName);
                                 break;
                             // Movement packet
                             case 14:

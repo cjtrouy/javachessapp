@@ -79,9 +79,9 @@ class ChessBoard {
 
 	}
 
-	public void createChessBoard() {
+	public void createChessBoard(String username) {
 
-		chessBoardFrame = new JFrame("Chess Board");
+		chessBoardFrame = new JFrame("Chess Board" + " - " + username);
 		chessBoardFrame.setLayout(new GridLayout(1, 1));
 		chessBoardFrame.setSize(WIDTH, HEIGHT);
 		chessBoardPanel = new JPanel();
